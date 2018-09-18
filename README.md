@@ -1,7 +1,7 @@
 ## Lab 03 - Intro to Javascript
 Name: _______________________________________
 
-## DUE: 24 Sep 2017 @ 11:59 pm
+## DUE: 23 Sep 2018 @ 11:59 pm
 
 ## Instructions:
 
