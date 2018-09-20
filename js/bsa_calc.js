@@ -16,7 +16,9 @@ function calculate() {
     // lbs to kg: 1 lb = 0.454 kg
     // inch to meter: 1 in = 0.0254 m
     // inch to cm: 1 in = 2.54 cm
-
+    var weight_kg = weight * 0.454;
+    var height_cm = height * 2.54;
+    var height_m = height * 0.0254;
     // ==========================================
     // Todo: Perform conversion calculations here
 
@@ -28,7 +30,7 @@ function calculate() {
 
     // ==========================================
     // Todo: Perform BSA calculation here
-
+        BSA = Math.sqrt(((height_cm) * (weight_kg))/3600);
     // -------------------------------
     // Ideal Body Weight (IBW)
     // -------------------------------
@@ -39,13 +41,13 @@ function calculate() {
 
         // ==========================================
         // Todo: Perform female IBW calculation here
-
+            IBW = 45.5 + (2.3 * (height - 60));
 
     } else if ( male ) {
 
         // ==========================================
         // Todo: Perform male IBW calculation here
-
+            IBW = 50 + (2.3 * (height - 60));
     }
 
     // -------------------------------
@@ -57,6 +59,7 @@ function calculate() {
     // ==========================================
     // Todo: Perform BMI calculation here
 
+        BMI = (weight_kg)/Math.pow(height_m, 2);
 
 
     // Do not modify this function call
